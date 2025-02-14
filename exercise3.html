@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab4 - Exercise 3</title>
+</head>
+<body>
+    <h1>JavaScript Lab</h1>
+    <script>
+        let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"];
+
+        console.log(classRoster.toString());
+
+        classRoster.push("Fiona", "Nancy");
+
+        classRoster.shift();
+
+        console.log(classRoster.toString());
+
+        let classInfo = [
+            {
+                className: "ENSF381: Full-Stack Web Development",
+                instructor: "Dr.Smith",
+                students: classRoster,
+                details: 
+                    {
+                        semester: "Winter",
+                        year: 2025,
+                    },
+                schedule: ["Monday", "Wednesday", "Friday"],
+            }
+        ]
+
+        classInfo[0].instructor = "Dr. Abdellatif";
+
+        console.log(classInfo[0].className, classInfo[0].instructor, classInfo[0].students);
+        console.log(classInfo[0].details.semester);
+
+        console.log(classInfo);
+
+        let nameOfClass = classInfo[0].className;
+        let classStudents = classInfo[0].students;
+        
+        console.log(nameOfClass);
+        console.log(classStudents);
+
+        let classSemester = classInfo[0].details.semester;
+        let classYear = classInfo[0].details.year;
+
+        console.log(classSemester);
+        console.log(classYear);
+
+        let student1 = classInfo[0].students.shift();
+        let student2 = classInfo[0].students.shift();
+        let remainingStudents = classInfo[0].students;
+
+        console.log(student1);
+        console.log(student2);
+        console.log(remainingStudents);
+
+
+    </script>
+</body>
+</html>
