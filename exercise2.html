@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Lab4 – Exercise 1</title> 
+</head> 
+<body> 
+<h1>JavaScript Lab</h1> 
+<script> 
+// Write your JavaScript code here 
+//Declaring functions
+
+// Add function
+/*
+    Step 1: Declaring unction
+    function add(num1, num2)
+    {
+        return num1 + num2;
+    }
+
+    Step 2: Default Parameters
+    function add(num1, num2 = 0)
+    {
+        return num1 + num2;
+    }
+*/
+// Step 3: Arrow Syntax
+    const add = (num1, num2 = 0) => num1 + num2;
+
+// Subtract function 
+/*
+    Step 1: Declaring Function
+    function sub(num1, num2)
+    {
+        return num1 - num2;
+    }
+
+    Step 2: Default Parameters
+    function sub(num1, num2 = 0)
+    {
+        return num1 - num2;
+    }
+*/
+// Step 3: Arrow Syntax
+    const sub = (num1, num2 = 0) => num1 - num2;
+
+// Multiplication Function
+// Step 3: Arrow Syntax
+    const mult = (num1, num2 = 0) => num1 * num2;
+
+// Division Function
+// Step 3: Arrow Syntax
+    const div = (num1, num2 = 0) => {
+        
+        if(num2 === 0)
+        {
+            return console.log("Error: cannot dvivide by zero.");
+        }
+        return num1 / num2;
+
+    };
+
+    
+// calculator and callback function
+    const calculator = (a, b, callback) => callback(a, b);
+
+    
+</script> 
+</body> 
+</html> 
