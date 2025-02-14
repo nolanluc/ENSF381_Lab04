@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Lab4 – Exercise 1</title> 
+</head> 
+<body> 
+<h1>JavaScript Lab</h1> 
+<script> 
+// Write your JavaScript code here 
+    let x = 1;
+    let y = 2;
+    const z = 3;
+    x = 2;
+    // z = 10
+
+    // String Operations
+    string1 = "Hello, World!";
+    string2 = "Javascript is fun!";
+    let len1 = string1.length;
+    console.log("Length of string1:", len1);
+    let concat = string1 + ' ' + string2;
+    console.log(concat);
+    let newString2 = string2.replace("fun", "awesome");
+    console.log("Modified string2:", newString2);
+
+    // String Templates
+    let name = "Alice";
+    let age = 25;
+    let backtickString = `My name is ${name} and I am ${age} years old`;
+    console.log("String using backticks:", backtickString);
+
+    let currentDate = new Date();
+    console.log(currentDate);
+    let year = currentDate.getFullYear();
+    console.log("Year:", year)
+    let month = currentDate.getMonth();
+    console.log("Month:", month)
+    let dayNumber = currentDate.getDay();
+    console.log("Day as a number:", dayNumber)
+
+    const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let dayName = weekDays[dayNumber];
+    console.log("Day as a name:", dayName);
+</script> 
+</body> 
+</html>
